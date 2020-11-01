@@ -1,0 +1,28 @@
+<svg xmlns = "http://www.w3.org/2000/svg" viewBox = "0 0 6000 6000" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<symbol id = "myLogo">
+		<path d = "M 55.7 316.4 A 166.6 166.7 0 1 1 344.3 316.4" stroke = "black"  fill = "none" stroke-linecap = "round"  stroke-width = "40.2"/>
+		<circle cx = "200" cy = "233" r = "19.6" stroke = "black" fill = "black"/>
+		<circle cx = "205" cy = "228" r = "8" stroke = "white" fill = "white"/>
+		<circle cx = "200" cy = "233" r = "100" stroke = "black" fill = "none"  stroke-width = "40.2"/>
+		<rect x = "180.4" y = "70" width = "39.2" height = "50" stroke = "black" fill = "black"/>
+		
+		<rect x = "112" y = "38.5" width = "15" height = "39.2" stroke = "black" fill = "black"
+			transform = "rotate(45,45,10)"/>
+		<circle cx = "58" cy = "91" r = "19.5" stroke = "black" fill = "black"/>
+		
+		<rect x = "283" y = "-31.2" width = "15" height = "39.2" stroke = "black" fill = "black"
+			transform = "rotate(135,291,52)"/>
+		<circle cx = "342" cy = "91" r = "19.5" stroke = "black" fill = "black"/>
+	</symbol>
+		<use xlink:href = "#myLogo" x = '10' y = '10'/>
+	<clipPath id = 'rect1'>
+		<rect x = '100' y = '100' height = '1000' width = '300' stroke = 'black'/>
+	</clipPath>
+	
+	<clipPath id = 'rect2'>
+		<rect x = '100' y = '100' height = '1000' width = '50' stroke = 'black'/>
+	</clipPath>
+	
+	<use xlink:href = "#myLogo" x = '100' y = '100' clip-path = 'url(#rect1)'/>
+	<use xlink:href = "#myLogo" x = '400' y = '200' clip-path = 'url(#rect2)'/>
+</svg>

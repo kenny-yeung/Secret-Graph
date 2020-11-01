@@ -1,0 +1,38 @@
+<svg xmlns = "http://www.w3.org/2000/svg" viewBox = "0 0 500 500">
+
+	<!-- Draws the Top and Bottom bars-->
+	<rect x = "15" y = "15" height = "50" width = "470"/>
+	<rect x = "15" y = "435" height = "50" width = "470"/>
+	
+	<clipPath id = "rect1">
+		<rect x = "15.5" y = "0" width = "225" height = "500"/>
+	</clipPath>
+	
+	<clipPath id = "rect2">
+		<rect x = "265" y = "0" width = "255" height = "500"/>
+	</clipPath>
+	
+	
+	<!-- Draws the D's-->
+	
+	<!-- Left D-->
+	<circle cx = "90" cy = "250"  r = "150" clip-path = "url(#rect1)"/>
+	<rect x = "15.5" y = "100" height = "300" width = "75"/>
+
+	<!-- Right D-->
+	<circle cx = "340" cy = "250"  r = "150" clip-path = "url(#rect2)"/>
+	<rect x = "265" y = "100" height = "300" width = "75"/>
+
+	
+	
+	<!-- Draws the Raindrops -->
+	
+	<!-- left Raindrop-->
+	<circle cx = "115" cy = "275"  r = "50" fill = "white"/>
+	<polygon points = "115,150,68,258,162,258" fill = "white"/>
+	
+	
+	<!-- right Raindrop-->
+	<polygon points = "365,150,318,258,412,258" fill = "white"/>
+	<circle cx = "365" cy = "275"  r = "50" fill = "white"/>
+</svg>
